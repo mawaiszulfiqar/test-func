@@ -1,0 +1,7 @@
+parameters: {}
+packages:
+    - name: slack_observers
+      functions:
+        - name: base_observer
+          runtime: python:default
+    
