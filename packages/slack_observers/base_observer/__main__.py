@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 
 @app.route("/", methods=['GET', 'POST'])
 def main():
-    print('This is a runtime log')
+    app.logger.info('This is a runtime log')
     return {"statusCode": 200, "headers": {"Contect-Type": "application/json"}, "text": "Hi"}
 
 @app.route("/atask", methods=['POST'])
